@@ -34,12 +34,12 @@
                 Please enter this information to contact me:
             </p>
             <form action="thankyou.html" method="get" name="myContact">
-                Name:
-                <input type="text" name="firstname" size="15" maxlength="30"><br />
-                Email:
-                <input type="email" name="email" size="15" rows="3" maxlength="40"><br />
-                Comment: <br />
-                <textarea name="comment" cols="50" rows="5"> </textarea>      <br />
+                <label for="firstname">First name:</label><br>
+                <input type="text" name="firstname" id="firstname" size="15" maxlength="30"> <br>
+                <label for="email"> Email:</label> <br>
+                <input type="email" name="email" id="email" size="15" rows="3" maxlength="40"><br>
+                <label for="comment"> Comment:</label> <br>
+                <textarea name="comment" id="comment" cols="50" rows="5"> </textarea>   <br><br>
                 <input type="submit" value="Submit">
 
             </form>
