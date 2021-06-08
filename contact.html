@@ -33,16 +33,27 @@
             <p>
                 Please enter this information to contact me:
             </p>
-            <form action="thankyou.html" method="get" name="myContact">
-                <label for="firstname">First name:</label><br>
-                <input type="text" name="firstname" id="firstname" size="15" maxlength="30"> <br>
-                <label for="email"> Email:</label> <br>
-                <input type="email" name="email" id="email" size="15" maxlength="40"><br>
-                <label for="comment"> Comment:</label> <br>
-                <textarea name="comment" id="comment" cols="50" rows="5"> </textarea>   <br><br>
-                <input type="submit" value="Submit">
-
+            <form action="thankyou.html" id="myform" onsubmit="return checkForm(this);">
+                <p>
+                    <label for='FirstName'>First Name:</label>
+                    <input type="text" id="FirstName" name="FirstName" size="15" maxlength="30" />
+                </p>
+                <p>
+                    <label for='EMail'>EMail:</label>
+                    <input type="text" id="EMail" name="EMail" size="15" maxlength="40" />
+                </p>
+                <p>
+                    <label for='Comments'>Comments:</label>
+                    <textarea cols="20" rows="5" id="Comments" name="Comments"></textarea>
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Submit">
+                </p>
             </form>
+
+            <div id="errorMessages"></div>
+            <script src="form_validation.js" ></script>
+
             <div class="cleft">
                 <img src="images/pic3.jpg" alt="Picture of Bellevue College campus, building T" height="168" />
             </div>
